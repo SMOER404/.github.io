@@ -12,9 +12,11 @@ $('.hall.owl-carousel').owlCarousel({
       1000: {
         items: 3
       }
-    },
-    onInitialized:slideOpacity,
-    onTranslated:slideOpacity
+    }
+});
+
+$(function () {
+  $('.masonry__link').Chocolat();
 });
 
 $('.reviews__carousel.owl-carousel').owlCarousel({
@@ -55,28 +57,7 @@ $('.clients__carousel.owl-carousel').owlCarousel({
   }
 });
 
-// добавляем класс первому элементу с классом active
-function slideOpacity(){
-    $('.owl-carousel .owl-item.opacity').removeClass('opacity');
-    $('.owl-carousel .owl-item.active').eq(0).addClass('first');
-}
 // выпадающее меню
 $('.dropdown').click(function(){
     $(this).find('.dropdown-content').slideToggle(400);
 });
-// Заголовок в блоке "Услуги"
-$('.services__item').hover(
-  function(){
-    $(this)
-  }
-
-);
-
-
-$('.services__item').hover(
-  function() {
-    $( this ).find('.services__item-title').addClass('active');
-  }, function() {
-    $( this ).find('.services__item-title').removeClass('active');
-  }
-);

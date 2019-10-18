@@ -1,10 +1,13 @@
-.hall__item {
+.hall {
+    height: 256px;
     padding-bottom: 128px;
+    overflow: visible;
 }
 .owl-item.active .hall__item img {
-    z-index: 9;
+    height: 240px;
+    transition-property: height;
+    transition-duration: 0.5s;
 }
-.owl-item.first.active .hall__item img {
-    height: 120%;
-    width: 105%;
+.owl-item.active .hall__item:hover img {
+    height: 256px;
 }

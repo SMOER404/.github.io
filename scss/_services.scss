@@ -17,21 +17,28 @@
         flex-wrap: wrap;
         justify-content: center;
         .services__item {
+            position: relative;
             width: 608px;
-            max-height: 240px;
+            height: 240px;
             box-shadow: 0px 10px 25px rgba(60, 47, 81, 0.15);
-            border-radius: 25px 0px 0px 25px;
             margin-right: 32px;
             background: transparent;
             margin-bottom: 64px;
             background: linear-gradient(332.15deg, #E3FDF5 0%, #FFE6FA 100%);
+            transition-property: height;
+            transition-duration: 1s;
+            z-index: 5;
             .services__item-title {
+                position: absolute;
+                top: 0px;
                 height: 80px;
+                width: 100%;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                display:none;
                 
+                border-radius: 0px 25px 0px 0px;
+                z-index: -1;
                 p {
                     font-family: PT Sans;
                     font-style: normal;
@@ -44,24 +51,34 @@
                     margin: 0;
                 }
             }
-            .services__item-title.active {
-                display:flex;
-            }
             .services__item-img {
                 box-shadow: 0px 10px 25px rgba(60, 47, 81, 0.15);
                 height: 240px;
+                z-index: 5;
+                position: absolute;
+                width: 100%;
+                bottom: 0px;
             }
         }
-        .services__item:nth-child(odd) {
-            border-radius: 0px 25px 25px 0px;
-            .services__item-img {
+        .services__item:hover {
+            height: 320px;
+        }
+        a:nth-child(odd) {
+            .services__item {
                 border-radius: 0px 25px 25px 0px;
+                .services__item-title,
+                .services__item-img {
+                    border-radius: 0px 25px 25px 0px;
+                }
             }
         }
-        .services__item:nth-child(even) {
-            border-radius: 25px 0px 0px 25px;
-            .services__item-img {
-                border-radius: 25px 0px 0px 25px;
+        a:nth-child(even) {
+            .services__item {
+                border-radius: 25px 0px 0px 25px ;
+                .services__item-title,
+                .services__item-img {
+                    border-radius: 25px 0px 0px 25px ;
+                }
             }
         }
     }

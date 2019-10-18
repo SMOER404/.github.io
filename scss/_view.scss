@@ -46,12 +46,14 @@
                 padding-left: 55px;
                 line-height: 40px;
             }
+            input:-ms-input-placeholder,
+            input::-webkit-input-placeholder,
             input::placeholder {
                 font-family: Roboto;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 14px;
-                line-height: 16px;
+                line-height: 40px;
                 color: #8D829F;
             }
             input:focus {

@@ -46,7 +46,12 @@ button {
         color: #3C2F51;
     }
 }
-
+.fancybox-stage {
+    background:  rgba(60, 47, 81, 0.7); 
+}
+.fancybox-image {
+    max-width: 769px;
+}
 @import 'header';
 @import 'about';
 @import 'hall';
@@ -57,3 +62,4 @@ button {
 @import 'clients';
 @import 'masonry';
 @import 'footer';
+@import 'modal';
