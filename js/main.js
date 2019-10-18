@@ -1,3 +1,5 @@
+// Phone mask
+$('.js-phone-mask').mask("+7(000) 000-0000");
 // Modal
 $(function () {
   $('.masonry__link').Chocolat();
