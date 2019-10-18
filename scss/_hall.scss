@@ -1,0 +1,10 @@
+.hall__item {
+    padding-bottom: 128px;
+}
+.owl-item.active .hall__item img {
+    z-index: 9;
+}
+.owl-item.first.active .hall__item img {
+    height: 120%;
+    width: 105%;
+}

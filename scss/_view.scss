@@ -1,0 +1,99 @@
+.view {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0px 123px;
+    margin-top: 100px;
+    .view__content {
+        flex: 0 0 355px;
+        max-width: 355px;
+        padding-right: 80px;
+        h1 {
+            margin: 0 0 30px;
+            font-family: Alegreya;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 65px;
+            letter-spacing: 0.01em;
+            color: #3C2F51;
+        }
+        p {
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color:  #3C2F51;
+        }
+    }
+    .view__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            input {
+                border: 1px solid #3C2F51;
+                height: 40px;
+                width: 589px;
+                box-sizing: border-box;
+                border-radius: 36px;
+                margin-bottom: 16px;
+                padding-left: 55px;
+                line-height: 40px;
+            }
+            input::placeholder {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                color: #8D829F;
+            }
+            input:focus {
+                border: 1px solid #F19298;
+            }
+            input:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        p {
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #8D829F;
+            text-align: center;
+        }
+        button {
+            width: 160px;
+            height: 42px;
+            background: #F19298;
+            border-radius: 50px;    
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: #FFFFFF;
+            border:none;
+        }
+        button:hover {
+            box-shadow: 0px 4px 20px rgba(131, 40, 51, 0.2);
+            border-radius: 50px;
+            color: #3C2F51;
+        }
+        button:focus {
+            border: 2px solid #8D829F;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 20px rgba(131, 40, 51, 0.2);
+            border-radius: 50px;
+        }
+    }
+}

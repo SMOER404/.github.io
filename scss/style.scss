@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+* {
+    outline: none;
+}
+button {
+    cursor: pointer;
+}
+::selection {
+    background: #F19298;
+    color: white;
+}
+.container {
+    width: 1280px;
+    margin: auto;
+    overflow: hidden;
+}
+// блок с картой
+.map {
+    display: flex;
+    align-items: center;
+    height: 480px;
+    margin-top: -4px;
+    background: linear-gradient(270deg, #FFC3A0 0%, #FFAFBD 100%);
+}
+.welcome {
+    height: 32px;
+    background: #f4e9ec;
+    display: flex;
+    justify-content: center;
+    padding: 88px 0px 104px 0px;
+    p {
+        font-family: Alegreya;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin: 0;
+        color: #3C2F51;
+    }
+}
+
+@import 'header';
+@import 'about';
+@import 'hall';
+@import 'advantages';
+@import 'view';
+@import 'services';
+@import 'reviews';
+@import 'clients';
+@import 'masonry';
+@import 'footer';

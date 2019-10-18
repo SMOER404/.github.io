@@ -1,0 +1,101 @@
+.footer {
+    height: 336px;
+    background: #FFF0F0;
+    padding: 0px 125px;
+    .footer__row {
+        display: flex;
+        height: calc(100% - 44px);
+        .footer__logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 0 0 293px;
+            max-width: 293px;
+            padding-right:66px;
+            img {
+                margin-top: -32px;
+            }
+            a {
+                font-family: PT Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                color: #3C2F51;
+                margin: 0 0 0 35px;
+            }
+        }
+        .footer__menu {
+            display: flex;
+            justify-content: space-between;
+            flex: 0 0 305px;
+            max-width: 305px;
+            padding-top: 56px;
+            padding-bottom: 24px;
+            padding-right:131px;
+            .footer__menu-col {
+                display: flex;
+                flex-direction: column;
+                a {
+                    font-family: PT Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    color: #3C2F51;
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        .footer__contact {
+            padding-top: 56px;
+            .footer__contact-social {
+                display: flex;
+                justify-content: space-between;
+                flex: 0 0 152px;
+                max-width: 152px;
+                padding-bottom: 42px;
+            }
+            .footer__contact-data {
+                display: flex;
+                flex-direction: column;
+                a {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 12px;
+                    font-family: PT Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    color: #3C2F51;
+                    img {
+                        padding-right: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 20px;
+        padding-bottom: 24px;
+        a {
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #3C2F51;
+        }
+        a:first-child {
+            padding-left: 35px;
+        }
+    }
+}

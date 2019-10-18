@@ -1,0 +1,172 @@
+
+// Шапка
+.header {
+    width: 1280px;
+    height: 698px;
+    margin: auto;
+    background: url(../images/header/bckg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+// Навигация
+.nav {
+    .navbar-top {
+        a {
+            position: relative;
+            float: right;
+            padding: 22px 122px 0px 0px;
+            font-family: 'PT Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFF0F0;
+            text-decoration: none;
+        }
+        a:after {
+            content: "";
+            position: absolute;
+            left: -36px;
+            top: 22px;
+            width: 16px;
+            height: 16px;
+            background: url(../images/header/navbar/phone.png);
+
+        }
+    }
+    .navbar {
+        display: flex;
+        padding: 53px 122px 0px 124px;
+        .logo {
+            padding-right: 115px;
+        }
+        .menu {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            .menu__link {
+                cursor: pointer;
+            }
+            .dropdown {
+                position: relative;
+            }
+            .dropdown:before {
+                content: "";
+                position: absolute;
+                right: -26px;
+                top: 8px;
+                width: 14px;
+                height: 8px;
+                background: url(../images/header/navbar/arrow-bottom.png);
+            }
+            .dropdown-content {
+                position: absolute;
+                left: 10px;
+                background: white;
+                margin-top: 10px;
+                width: 90px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                display:none;
+                a {
+                    color: black;
+                    padding: 5px;
+                }
+            }
+            a {
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 18px;
+                letter-spacing: 0.03em;
+                color: #FFF0F0;
+            }
+        }
+    }
+}
+// Контент шапки
+.header__content {
+    position: relative;
+    display: flex;
+    padding-top: 92px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .header__content-logo {
+        padding-top: 48px;
+    }
+    .header__content-btn {
+        padding-top: 75px;
+        padding-left: 10px;
+        button {
+            width: 160px;
+            height: 42px;
+            background: #F19298;
+            border-radius: 50px;    
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: #FFFFFF;
+            border:none;
+        }
+        button:hover {
+            box-shadow: 0px 4px 20px rgba(131, 40, 51, 0.2);
+            border-radius: 50px;
+            color: #3C2F51;
+        }
+        button:focus {
+            border: 2px solid #8D829F;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 20px rgba(131, 40, 51, 0.2);
+            border-radius: 50px;
+        }
+    }
+    .header__social-icon {
+        position: absolute;
+        display: flex;
+        right: 48px;
+        top: 167px;
+        flex-direction: column;
+        height: 152px;
+        justify-content: space-between;
+    }
+}
+
+.header__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 105px 0px 136px;
+    position: relative;
+    .header__footer-address,
+    .header__footer-phone {
+        display: flex;
+        align-items: center;
+    }
+    img {
+       padding-right: 18px;
+    }
+    a {
+        font-family: 'PT Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFF0F0;
+    }
+    .slide-bottom {
+        position: absolute;
+        left: calc(50% - 6px);
+        bottom: -15px;
+    }
+}
+.header__footer:before {
+    position: absolute;
+    left: calc(50% - 6px);
+    top: 15px;
+}

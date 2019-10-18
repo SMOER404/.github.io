@@ -1,0 +1,31 @@
+.clients {
+    margin-bottom: 145px;
+    .clients__title {
+        h2 {
+            font-family: PT Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 31px;
+            text-align: center;
+            color: #3C2F51;
+            margin: 0 0 61px;
+        }
+    }
+    .clients__carousel{
+        padding: 0px 120px;
+        .clients__carousel-item {
+            img {
+                filter: grayscale(100%); 
+            }
+            img:hover {
+                filter: unset;
+            }
+        }
+    }
+}
+
+body > div > div.clients > div.clients__carousel.owl-carousel.owl-loaded.owl-drag > div.owl-stage-outer > div {
+    display: flex !important;
+    align-items: center;
+}

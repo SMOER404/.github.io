@@ -1,0 +1,85 @@
+.reviews {
+    margin-top:141px;
+    position: relative;
+    margin-bottom: 90px;
+    .reviews__title {
+        h1 {
+            font-family: Alegreya;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 65px;
+            text-align: center;
+            letter-spacing: 0.01em;
+            color: #3C2F51;
+            margin: 0 0 55px;
+        }
+    }
+    .reviews__carousel {
+        padding: 0px 128px;
+        max-width: 1115px;
+    }
+    .reviews__Item {
+        width: 100%;
+    }
+    .reviews__item-img {
+        img {
+            width: 280px;
+            height: 160px;
+            margin-bottom: 24px;
+        }
+    }
+    .reviews__item-content {
+        width: 280px;
+        p {
+            font-family: PT Sans;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #3C2F51;
+            margin: 0 0 25px;
+        }
+        .reviews__item-info {
+            p {
+                font-family: PT Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: right;
+                color: #3C2F51;
+                margin: 0;
+            }
+        }
+    }
+    .reviews__control {
+        width: calc(100% - 116px);
+        margin: auto;
+        position: absolute;
+        top: calc(55% - 6px);
+        left: 58px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+body > div > div.reviews > div.reviews__carousel.owl-carousel.owl-loaded.owl-drag > div.owl-nav.disabled {
+    position: absolute;
+    top: 45%;
+    left: 58px;
+    width: 1164px;
+    display: flex;
+    justify-content: space-between;
+}
+body > div > div.reviews > div.reviews__carousel.owl-carousel.owl-loaded.owl-drag > div.owl-nav.disabled > button {
+    font-size: 0px;
+    width: 12px;
+    height: 21px;
+}
+body > div > div.reviews > div.reviews__carousel.owl-carousel.owl-loaded.owl-drag > div.owl-nav.disabled > button.owl-prev {
+    background: url(../images/reviews/prev.png);
+}
+body > div > div.reviews > div.reviews__carousel.owl-carousel.owl-loaded.owl-drag > div.owl-nav.disabled > button.owl-next {
+    background: url(../images/reviews/next.png);
+}
