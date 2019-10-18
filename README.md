@@ -1,2 +1,2 @@
 # Landing page "Мечта"
-# Версия для Laptop
+Версия для Laptop
