@@ -1,1 +1,1 @@
-# .github.io
+# Landing page "Мечта"
