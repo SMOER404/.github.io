@@ -56,8 +56,3 @@ $('.clients__carousel.owl-carousel').owlCarousel({
     }
   }
 });
-
-// выпадающее меню
-$('.dropdown').click(function(){
-    $(this).find('.dropdown-content').slideToggle(400);
-});
