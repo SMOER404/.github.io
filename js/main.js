@@ -2,6 +2,7 @@
 $(function () {
   $('.masonry__link').Chocolat();
 });
+$('.js-phone-mask').mask("+7(000) 000-0000");
 // Carousel
 $('.hall.owl-carousel').owlCarousel({
   loop: true,
