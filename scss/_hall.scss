@@ -11,3 +11,38 @@
 .owl-item.active .hall__item:hover img {
     height: 256px;
 }
+
+@media (max-width: 768px) {
+    .hall {
+        height: 425px !important;
+        width: 656px !important;
+        margin: auto;
+        padding-bottom: 88px !important;
+        .hall__item {
+            img {
+                height: 100% !important;
+                box-shadow: 0px 10px 25px rgba(60, 47, 81, 0.15);
+            }
+        }
+    }
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        padding-top: 34px;
+        .owl-dot {
+            width: 10px;
+            height: 10px; 
+            background: #8D829F !important;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .owl-dot.active {
+            width: 14px;
+            height: 14px;
+            margin-top: -2px;
+            background: #F19298 !important;
+            box-shadow: 0px 4px 8px rgba(131, 40, 51, 0.2);
+        }
+
+    }
+}

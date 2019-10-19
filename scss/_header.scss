@@ -1,4 +1,3 @@
-
 // Шапка
 .header {
     width: 1280px;
@@ -169,4 +168,163 @@
     position: absolute;
     left: calc(50% - 6px);
     top: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        height: 1024px !important;
+        position: relative;
+    }
+    .header {
+        max-width: 768px;
+        width: auto;
+    }
+    .header__footer-phone,
+    .header__footer-address,
+    .header__social-icon,
+    .nav {
+        display: none !important;
+    }
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .header__content {
+        width: 380.78px;
+        height: 420px;
+        padding-top: 0px !important;
+        .header__content-title {
+            img{
+                max-width: 100%;
+            }
+        }
+        .header__content-btn {
+            padding-top: 130px !important;
+        }
+    }
+    .header__footer {
+        display: none !important;
+    }
+    .slide-bottom.visible-md {
+        display: block !important;
+        bottom: 56px;
+        position: absolute;
+        left: 50%;
+        margin-left: -10px;
+    }
+    .navbar-mobile {
+        .navbar-mobile__top {
+            display: flex;
+            justify-content: space-between;
+            height: 25px;
+            padding: 57px 56px 0px 56px;
+            button {
+                background: transparent;
+                border: none;
+            }
+            .navbar-mobile__contact {
+                display: flex;
+                .navbar-mobile__address {
+                    padding-right: 110px;
+                }
+                a {
+                    font-family: 'PT Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    color: #FFF0F0;
+                }
+                img {
+                    width: 21px;
+                    margin-bottom: -5px;
+                    padding-right: 22px;
+                    height: 21px;
+                }
+            }
+        }
+        .navbar-mobile__menu {
+            height: 100%;
+            width: 100%;
+            background: #5e546f;
+            position: fixed;
+            display: none;
+            z-index: 10;
+
+            .navbar__mobile__content {
+                width: 656px;
+                margin: auto;
+                    .navbar-mobile__title {
+                        font-family: 'PT Sans', sans-serif;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 32.2597px;
+                        line-height: 42px;
+                        color: #FFF0F0;
+                        padding-top: 104px;
+                        p {
+                            margin: 0;
+                            padding-bottom: 53px;
+                        }
+                    }
+                    .navbar-mobile__menu-list {
+                        display: flex;
+                        flex-direction: column;
+                        .dropdown__menu {
+                            padding-bottom: 33px;
+                            .dropdown__menu-content {
+                                display: none;
+                                flex-direction: column;
+                                margin-bottom: 30px;
+                                a {
+                                    font-family: 'PT Sans', sans-serif;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 18.8182px;
+                                    line-height: 26px;
+                                    color: #FFF0F0;     
+                                    padding-bottom: 16px !important;
+                                }
+                                a:first-child {
+                                    padding-top: 30px;
+                                }
+                            }
+                        }
+                        a {
+                            font-family: 'PT Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 32.2597px;
+                            line-height: 42px;
+                            color: #FFF0F0;
+                            padding-bottom: 53px;
+                        }
+                    }
+            }
+            .navbar-mobile__social {
+                position: absolute;
+                right: 56px;
+                display: flex;
+                flex-direction: column;
+                height: 230px;
+                top: 352px;
+                justify-content: space-between;
+            }
+
+
+        }
+        .navbar-mobile__menu-close {
+            
+        }
+    }
+}
+
+
+.dropdown-link:hover ~ .dropdown__menu-content {
+    display: flex !important; 
 }

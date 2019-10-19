@@ -64,3 +64,29 @@
         z-index: -1;
     }
 }
+
+
+@media (max-width: 768px) {
+    .advantages__list {
+        justify-content: space-between !important;
+        padding: 0px 53px;
+    }
+    .advantages__item {
+        width: 288px !important;
+        .advantages__item-img img {
+            width: 288px !important;
+        }
+    }
+    .advantages__title {
+        width: 311px;
+        margin: auto;
+    }
+    .advantages .advantages__list:before {
+        height: 100% !important;
+        left: 0px;
+        margin-top: -40px !important;
+    }
+    body > div.container > div.advantages > div.advantages__list > div:nth-child(5) {
+        padding-left: 25%;
+    }
+}

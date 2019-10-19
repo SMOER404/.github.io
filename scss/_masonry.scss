@@ -46,3 +46,61 @@
 
     }
 }
+
+
+@media (max-width: 768px) {
+   .masonry {
+       min-height: auto !important;
+       height: 634px !important; 
+   }
+    .masonry-right__col-left {
+        margin-right: 0px !important;
+    }
+    .masonry_item,
+    .masonry-left {
+        margin-right: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .masonry__item1 {
+        width: 265px !important;
+        height: 398px !important;
+    }
+    .masonry__item2 {
+        width: 265px !important;
+        height: 236px !important;
+    }
+    .masonry__item3 {
+        width: 503px !important;
+        height: 276px !important;
+    }
+    .masonry__item4 {
+        width: 295px !important;
+        height: 210px !important;
+    }
+    .masonry__item5 {
+        width: 208px;
+        height: 357px;
+    }
+    .masonry__item6 {
+        width: 295px !important;
+        height: 147px !important;
+    }
+    .masonry__show-more {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background: #E5E5E5;
+        a {
+            padding-top: 46px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: #3C2F51;
+        }
+
+    }
+}

@@ -29,3 +29,11 @@ body > div > div.clients > div.clients__carousel.owl-carousel.owl-loaded.owl-dra
     display: flex !important;
     align-items: center;
 }
+
+@media (max-width: 768px) {
+    .clients__carousel {
+        padding: 0px !important;
+        width: 655px !important;
+        margin: auto;
+    }
+}

@@ -14,6 +14,88 @@
 <body>
     <div class="container">
         <header class="header">
+            <nav class="navbar-mobile hidden-lg">
+                <div class="navbar-mobile__top">
+                    <div class="navbar-mobile__contact">
+                        <div class="navbar-mobile__address">
+                            <img src="images/header/point.png" alt="Иконка метка">
+                            <a href="#">проспект Динамо 44, СПб</a>
+                        </div>
+                        <div class="navbar-mobile__phone">
+                            <img src="images/header/phone.png" alt="Иконка телефона">
+                            <a href="tel:89319891800">+7 (931) 989-18-00</a>
+                        </div>
+                    </div>
+                    <div class="navbar-mobile__btn">
+                        <button class="navbar-mobile__burger show-menu">
+                            <img src="images/header/md/burger.svg" alt="burger menu">
+                        </button>
+                    </div>                   
+                </div>
+                <div class="navbar-mobile__menu">
+                    <div class="navbar-mobile__top d-flex">
+                        <div class="navbar-mobile__contact">
+                                <div class="navbar-mobile__address">
+                                    <img src="images/header/point.png" alt="Иконка метка">
+                                    <a href="#">проспект Динамо 44, СПб</a>
+                                </div>
+                                <div class="navbar-mobile__phone">
+                                    <img src="images/header/phone.png" alt="Иконка телефона">
+                                    <a href="tel:89319891800">+7 (931) 989-18-00</a>
+                                </div>
+                        </div>
+                        <div class="navbar-mobile__btn">
+                            <button class="navbar-mobile__burger navbar-mobile__menu-close">
+                                <img src="images/header/md/close-btn.svg" alt="burger menu">
+                            </button>
+                        </div>     
+                    </div>
+                    <div class="navbar__mobile__content">
+                        <div class="navbar-mobile__title">
+                            <p>Меню</p>
+                        </div>
+                        <div class="navbar-mobile__menu-list">
+                            <div class="dropdown__menu">
+                                <a href="#" class="dropdown-link">
+                                    Услуги
+                                    <img src="images/header/navbar/arrow-bottom.png" alt="arrow">
+                                </a>
+                                <div class="dropdown__menu-content">
+                                    <a href="">Услуга 1</a>
+                                    <a href="">Услуга 2</a>
+                                    <a href="">Услуга 3</a>
+                                </div>
+                            </div>
+                            <div class="dropdown__menu">
+                                <a href="#" class="dropdown-link">
+                                    Наша мечта
+                                    <img src="images/header/navbar/arrow-bottom.png" alt="arrow">
+                                </a>
+                                <div class="dropdown__menu-content">
+                                    <a href="">О компании</a>
+                                    <a href="">Выбрать зал</a>
+                                    <a href="">Блог</a>
+                                    <a href="">Отзывы</a>
+                                    <a href="">Добавить отзыв</a>
+                                </div>
+                            </div>
+                            <a href="#">Бронирование</a>
+                            <a href="#">Контакты</a>
+                        </div> 
+                    </div>
+                    <div class="navbar-mobile__social">
+                        <a href="#">
+                            <img src="images/header/md/vk_logo-md.png" alt="Логотип vk">
+                        </a>
+                        <a href="#">
+                            <img src="images/header/md/facebook_logo-md.png" alt="Логотип facebook">
+                        </a>
+                        <a href="#">
+                            <img src="images/header/md/instagram_logo-md.png" alt="Логотип instagram">
+                        </a>
+                    </div>
+                </div>
+            </nav>
             <div class="header__wrapper">
                 <nav class="nav" role="navigation">
                     <div class="navbar">
@@ -83,6 +165,7 @@
                     <a href="#" class="slide-bottom"><img src="images/header/arrow_slide.png" alt=""></a>
                 </div>
             </div>
+            <a href="#" class="slide-bottom visible-md"><img src="images/header/arrow_slide.png" alt=""></a>
         </header>
         <section class="about">
             <div class="about__content">
@@ -301,50 +384,54 @@
         </div>
         <div class="masonry">
             <div class="masonry-left">
-                <a href="images/masonry/masonry-img_1.png" class="masonry__link b-link-stripe b-animate-go  thickbox">
-                    <div class="masonry_item masonry__item1">
+                <div class="masonry_item masonry__item1">
+                    <a href="images/masonry/masonry-img_1.png" class="masonry__link b-link-stripe b-animate-go  thickbox">
                         <img src="images/masonry/masonry-img_1-2x.jpg" alt="">
-                    </div>
-                </a>
-                <a href="images/masonry/masonry-img_2-2x.jpg"
+                    </a>
+                </div>
+                <div class="masonry_item masonry__item2">
+                    <a href="images/masonry/masonry-img_2-2x.jpg"
                     class="masonry__link b-link-stripe b-animate-go  thickbox">
-                    <div class="masonry_item masonry__item2">
                         <img src="images/masonry/masonry-img_2.png" alt="">
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
             <div class="masonry-right">
-                <a href="images/masonry/masonry-img_3-2x.jpg"
-                    class="masonry__link b-link-stripe b-animate-go  thickbox">
-                    <div class="masonry_item masonry__item3">
+                <div class="masonry_item masonry__item3">
+                    <a href="images/masonry/masonry-img_3-2x.jpg"
+                        class="masonry__link b-link-stripe b-animate-go  thickbox">
                         <img src="images/masonry/masonry-img_3.png" alt="">
-                    </div>
-                </a>
+                    </a>
+                </div>
                 <div class="masonry-right__row">
                     <div class="masonry-right__col-left">
-                        <a href="images/masonry/masonry-img_4-2x.jpg"
-                            class="masonry__link b-link-stripe b-animate-go  thickbox">
-                            <div class="masonry_item masonry__item4">
-                                <img src="images/masonry/masonry-img_4.png" alt="">
-                            </div>
-                        </a>
-                        <a href="images/masonry/masonry-img_6-2x.jpg"
-                            class="masonry__link b-link-stripe b-animate-go  thickbox">
-                            <div class="masonry_item masonry__item6">
-                                <img src="images/masonry/masonry-img_6.png" alt="">
-                            </div>
-                        </a>
+                        <div class="masonry_item masonry__item4">
+                            <a href="images/masonry/masonry-img_4-2x.jpg"
+                                class="masonry__link b-link-stripe b-animate-go  thickbox">
+                            <img src="images/masonry/masonry-img_4.png" alt="">
+                            </a>
+                        </div>
+                        <div class="masonry_item masonry__item6">
+                            <a href="images/masonry/masonry-img_6-2x.jpg"
+                                class="masonry__link b-link-stripe b-animate-go  thickbox">
+                            <img src="images/masonry/masonry-img_6.png" alt="">
+                            </a>
+                        </div>
                     </div>
                     <div class="masonry-right__col-right">
-                        <a href="images/masonry/masonry-img_5-2x.jpg"
-                            class="masonry__link b-link-stripe b-animate-go  thickbox">
-                            <div class="masonry_item masonry__item5">
-                                <img src="images/masonry/masonry-img_5.png" alt="">
-                            </div>
-                        </a>
+                        <div class="masonry_item masonry__item5">
+                            <a href="images/masonry/masonry-img_5-2x.jpg"
+                                class="masonry__link b-link-stripe b-animate-go  thickbox">
+                            <img src="images/masonry/masonry-img_5.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="masonry__show-more hidden-lg">
+                <a href="images/masonry/masonry-img_5-2x.jpg"
+                class="masonry__link b-link-stripe b-animate-go  thickbox">Больше фотографий...</a>
         </div>
         <div class="map">
             <iframe
@@ -361,6 +448,7 @@
                 </div>
                 <div class="footer__menu">
                     <div class="footer__menu-col">
+                        <img src="images/footer/footer_logo.svg" alt="footer logo" class="hidden-lg">
                         <a href="#">О компании</a>
                         <a href="#">выбрать зал</a>
                         <a href="#">Блог</a>
@@ -394,7 +482,9 @@
             </div>
             <div class="footer__bottom">
                 <a href="#">© 2019 All rights reserved. Webiraylab.com</a>
-                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Политика конфиденциальности
+                    <img src="images/footer/footer_arrow-top.svg" alt="" class="hidden-lg">
+                </a>
                 <a href="#">Designed by Missoff Digital Design Studio</a>
             </div>
         </div>
@@ -641,7 +731,6 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-    <script src="js/maska.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/main.js"></script>
 </body>

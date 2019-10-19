@@ -88,3 +88,23 @@ body > div > div.services > div.services__list > a:nth-child(5) > div > div.serv
 body > div > div.services > div.services__list > a:nth-child(5) > div {
     border-radius: 25px !important;
 }
+
+
+@media (max-width: 768px) {
+    .services__item {
+        width: 352px !important;
+        height: 304px !important;
+    }
+    .services__list {
+        justify-content: space-between !important;
+        a:nth-child(even) .services__item {
+            margin-right: 0px !important;
+        }
+        a:last-child .services__item {
+            margin-left: 220px;
+        }
+    }
+    .services .services__title h1 {
+        margin: 56px 0px 56px !important
+    }
+}

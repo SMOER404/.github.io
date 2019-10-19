@@ -99,3 +99,17 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .view {
+        padding: 0px 56px !important;
+    }
+    .view__form,
+    .view .view__content {
+        flex: 0 0 288px !important;
+        max-width: 288px !important;
+    }
+    .view .view__form form input {
+        width: 288px !important;
+    }
+}

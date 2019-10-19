@@ -1,5 +1,3 @@
-// Phone mask
-$('.js-phone-mask').mask("+7(000) 000-0000");
 // Modal
 $(function () {
   $('.masonry__link').Chocolat();
@@ -14,7 +12,9 @@ $('.hall.owl-carousel').owlCarousel({
       items: 1
     },
     600: {
-      items: 3
+      items: 1,
+      nav: false,
+      dots: true
     },
     1000: {
       items: 3
@@ -25,7 +25,7 @@ $('.reviews__carousel.owl-carousel').owlCarousel({
   loop: true,
   nav: true,
   autoplay: true,
-  margin: 92,
+  margin: 95,
   autoWidth: true,
   navigationText: ["<img src='images/reviews/prev.png'>","<img src='images/reviews/next.png'>"],
   responsive: {
@@ -33,9 +33,12 @@ $('.reviews__carousel.owl-carousel').owlCarousel({
       items: 1
     },
     600: {
-      items: 2
+      items: 2,
+      margin: 95,
+      nav: false,
+      slideBy: 2
     },
-    1000: {
+    1024: {
       items: 3
     }
   }
@@ -51,7 +54,9 @@ $('.clients__carousel.owl-carousel').owlCarousel({
       items: 2
     },
     600: {
-      items: 3
+      items: 4,
+      dots: false,
+      margin: 78
     },
     1000: {
       items: 5
@@ -175,3 +180,24 @@ function startQuizz() {
   
 }
 startQuizz();
+
+function startMenu() {
+
+  function showMenu() {
+    $('.show-menu').click(function(){
+      $('.navbar-mobile__menu').fadeIn(400);
+      $('.navbar-mobile__top').hide();
+    });
+  }
+  function hideMenu() {
+    $('.navbar-mobile__menu-close').click(function(){
+      $('.navbar-mobile__menu').hide();
+      $('.navbar-mobile__top').fadeIn(400);
+    });
+  }
+  showMenu();
+  hideMenu();
+}
+
+startMenu();
+

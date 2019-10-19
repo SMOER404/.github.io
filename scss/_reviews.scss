@@ -83,3 +83,24 @@ body > div > div.reviews > div.reviews__carousel.owl-carousel.owl-loaded.owl-dra
 body > div > div.reviews > div.reviews__carousel.owl-carousel.owl-loaded.owl-drag > div.owl-nav.disabled > button.owl-next {
     background: url(../images/reviews/next.png);
 }
+
+@media (max-width: 768px) {
+    .reviews .reviews__carousel {
+        padding: 0px !important;
+        width: 655px !important;
+        margin: auto;
+    }
+    .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+        display: none !important;
+    }
+    .reviews__Item {
+        width: 280px;
+    }
+    .reviews__item-img {
+        img {
+            width: 280px;
+            height: 160px;
+            margin-bottom: 24px;
+        }
+    }
+}

@@ -49,3 +49,13 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    .about {
+        padding-bottom: 63px;
+        .about__btn {
+            margin-bottom: 0px !important;
+        }
+    }
+}

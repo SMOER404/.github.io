@@ -99,3 +99,45 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 0px 56px !important;
+        height: 380px !important;
+    }
+    .footer__menu,
+    .footer__contact {
+        padding-top: 97px !important;
+    }
+    .footer__logo {
+        display: none !important;
+    }
+    .footer__menu-col {
+        position: relative;
+        img {
+            position: absolute;
+            top: -118px;
+            width: 118px;
+            height: 83px
+        }
+    }
+    .footer .footer__bottom a:first-child {
+        padding-left: 0px !important;
+    }
+    .footer__bottom {
+        position: relative;
+        a:nth-child(2) {
+            position: absolute;
+            left: 228px;
+            bottom: 64px;
+            img {
+                position: absolute;
+                left: 50%;
+                margin-left: -10px;
+                bottom: 43px;
+            }
+        }
+    }
+
+}
+

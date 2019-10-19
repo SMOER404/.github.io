@@ -20,6 +20,9 @@ button {
     margin: auto;
     overflow: hidden;
 }
+.d-flex {
+    display: flex !important;
+}
 // блок с картой
 .map {
     display: flex;
@@ -51,6 +54,34 @@ button {
 }
 .fancybox-image {
     max-width: 769px;
+}
+
+.dropdown__menu-content.active {
+    display: flex !important;
+}
+@media (max-width: 768px) {
+.container {
+    max-width: 768px;
+    width: auto;
+}
+.welcome {
+    padding: 0px;
+    height: 204px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.visible-md {
+    display: block !important;
+}
+}
+@media (min-width: 769px) {
+    .visible-md {
+        display: none !important;
+    }
+    .hidden-lg {
+        display: none !important;
+    }
 }
 @import 'header';
 @import 'about';
